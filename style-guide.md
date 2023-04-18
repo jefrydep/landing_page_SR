@@ -1,51 +1,80 @@
-# Front-end Style Guide
+# Essential Stuff
 
-## Layout 
+## Html import links
 
-The designs were created to the following widths:
+Google font
 
-- Mobile: 375px
-- Desktop: 1440px
+``` html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+  rel="stylesheet">
+```
+
+Ionicon
+
+``` html
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+```
+
+---
 
 ## Colors
 
-### Primary
-
-- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
-- Dark Blue (main background): hsl(218, 28%, 13%)
-- Dark Blue (footer background): hsl(216, 53%, 9%)
-- Dark Blue (testimonials background): hsl(219, 30%, 18%)
-
-### Accent
-
-- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
-- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
-- Light Red (error): hsl(0, 100%, 63%)
-
-### Neutral
-
-- White: hsl(0, 0%, 100%)
+``` css
+--dark-jungle-green: hsl(188, 63%, 7%);
+--prussian-blue: hsl(200, 69%, 14%);
+--raisin-black-1: hsl(227, 29%, 13%);
+--raisin-black-2: hsl(229, 17%, 19%);
+--yellow-green: hsl(89, 72%, 45%);
+--orange-soda: hsl(9, 100%, 62%);
+--cultured-1: hsl(0, 0%, 93%);
+--cultured-2: hsl(192, 24%, 96%);
+--misty-rose: hsl(7, 56%, 91%);
+--alice-blue: hsl(210, 100%, 97%);
+--seashell: hsl(8, 100%, 97%);
+--cadet: hsl(200, 15%, 43%);
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
+--opal: hsl(180, 20%, 62%);
+```
 
 ## Typography
 
-### Body Copy
+``` css
+--ff-nunito-sans: "Nunito Sans", sans-serif;
+--ff-poppins: "Poppins", sans-serif;
 
-- Font size: 14px
+--fs-1: 1.875rem;
+--fs-2: 1.5rem;
+--fs-3: 1.375rem;
+--fs-4: 1.125rem;
+--fs-5: 0.875rem;
+--fs-6: 0.813rem;
+--fs-7: 0.75rem;
 
-### Headings, Call-to-actions, Header Navigation
+--fw-500: 500;
+--fw-600: 600;
+--fw-700: 700;
+```
 
-- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
-- Weights: 400, 700
+## Transition
 
-### Body
+``` css
+--transition: 0.25s ease;
+```
 
-- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Weights: 400, 700
+## Spacing
 
-## Icons
+``` css
+--section-padding: 100px;
+```
 
-For the social icons, you can use a font icon library. Some suggestions can be found below:
+## Shadow
 
-- [Font Awesome](https://fontawesome.com/)
-- [IcoMoon](https://icomoon.io/)
-- [Ionicons](https://ionicons.com/)
+``` css
+--shadow-1: 0 5px 20px 0 hsla(219, 56%, 21%, 0.1);
+--shadow-2: 0 16px 32px hsla(188, 63%, 7%, 0.1);
+```
