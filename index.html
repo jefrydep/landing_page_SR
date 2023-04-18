@@ -1,255 +1,1464 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San Roman Inmobiliaria</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./SAN ROMAN.ico" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
-  <header class="hero">
-    <div class="hero__wave"></div>
+  <!-- 
+    - #HEADER
+  -->
 
-    <nav class="nav container">
-      <figure class="nav__logo">
-        <img src="images/logo.svg" class="nav__img">
-      </figure>
+  <header class="header" data-header>
 
-      <a href="#" class="nav__link">Features</a>
-      <a href="#" class="nav__link">Team</a>
-      <a href="#" class="nav__link">Sign In</a>
-    </nav>
+    <div class="overlay" data-overlay></div>
 
-    <section class="hero__main container">
-      <img src="images/illustration-intro.png" class="hero__img">
+    <div class="header-top">
+      <div class="container">
 
-      <h1 class="hero__title">All your files in one secure location, accessible anywhere.</h1>
-      <p class="hero__paragraph">Fylo stores all your most important files in one secure location. Access them wherever 
-        you need, share and collaborate with friends family, and co-workers.</p>
-        <a href="#" class="hero__cta">  
-          Get Started
+        <ul class="header-top-list">
+
+          <li>
+            <a href="mailto:info@homeverse.com" class="header-top-link">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <span>info@SanRoman.com</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="header-top-link">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>Juliaca</address>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <ul class="header-top-social-list">
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+          <button class="header-top-btn">contactar</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" alt="Homeverse logo">
         </a>
-    </section>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.png" alt="Homeverse logo">
+            </a>
+
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+              </li>
+
+              <li>
+                <a href="#about" class="navbar-link" data-nav-link>Acerca de</a>
+              </li>
+
+              <li>
+                <a href="#service" class="navbar-link" data-nav-link>Servicios</a>
+              </li>
+
+              <li>
+                <a href="#property" class="navbar-link" data-nav-link>Propiedades</a>
+              </li>
+
+              <li>
+                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link>Contactanos</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </nav>
+
+        <div class="header-bottom-actions">
+
+          <button class="header-bottom-actions-btn" aria-label="Search">
+            <ion-icon name="search-outline"></ion-icon>
+
+            <span>Search</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" aria-label="Profile">
+            <ion-icon name="person-outline"></ion-icon>
+
+            <span>Profile</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" aria-label="Cart">
+            <ion-icon name="cart-outline"></ion-icon>
+
+            <span>Cart</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="menu-outline"></ion-icon>
+
+            <span>Menu</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
 
   </header>
 
-  <main class="main">
-    <section class="about container">
 
-      <article class="about__item">
-        <figure class="about__picture">
-          <img src="images/icon-any-file.svg" class="about__img">
-        </figure>
 
-        <h3 class="about__title"> Access your files, anywhere</h3>
 
-        <p class="about__paragraph"> The ability to use a smartphone, tablet, or computer to access your account means your 
-          files follow you everywhere.</p>
-      </article>
 
-      <article class="about__item">
-        <figure class="about__picture">
-          <img src="images/icon-security.svg" class="about__img">
-        </figure>
+  <main>
+    <article>
 
-        <h3 class="about__title">  Security you can trust
-        </h3>
+      <!-- 
+        - #HERO
+      -->
 
-        <p class="about__paragraph"> 2-factor authentication and user-controlled encryption are just a couple of the security 
-          features we allow to help secure your files.
-        </p>
-      </article>
+      <section class="hero" id="home">
+        <div class="container">
 
-      
+          <div class="hero-content">
 
- 
-      <article class="about__item">
-        <figure class="about__picture">
-          <img src="images/icon-collaboration.svg" class="about__img">
-        </figure>
+            <p class="hero-subtitle">
+              <ion-icon name="home"></ion-icon>
 
-        <h3 class="about__title">Real-time collaboration</h3>
+              <span>Real Estate Agency</span>
+            </p>
 
-        <p class="about__paragraph">
-          Securely share files and folders with friends, family and colleagues for live collaboration. 
-          No email attachments required.</p>
-      </article>
+            <h2 class="h1 hero-title">Construye tu sueño con nosotros</h2>
 
-      <article class="about__item">
-        <figure class="about__picture">
-          <img src="images/icon-any-file.svg" class="about__img">
-        </figure>
+            <p class="hero-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+            </p>
 
-        <h3 class="about__title">  Store any type of file</h3>
+            <button class="btn">Adquiere una propiedad</button>
 
-        <p class="about__paragraph">  Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
-          file types to be securely stored and shared.</p>
-      </article>
-
-    </section>
-
-    <section class="productive container">
-
-      <figure class="productive__picture">
-        <img src="images/illustration-stay-productive.png" class="productive__img">
-      </figure>
-
-      <div class="productive__texts">
-
-        <h3 class="productive__title"> Stay productive, wherever you are</h3>
-
-        <p class="productive__paragraph"> Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
-          storage needs.</p>
-
-        <p class="productive__paragraph">Securely share files and folders with friends, family and colleagues for live collaboration. No email 
-          attachments required.</p>
-
-        <a href="#" class="productive__cta">  
-          See how Fylo works
-          <img src="images/icon-arrow.svg" class="productive__arrow">
-        </a>
-
-      </div>
-    </section>
-
-    <section class="card container">
-
-      <article class="card__item card__item--first">
-        <p class="card__paragraph"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
-          become a well-oiled collaboration machine.</p>
-
-        <div class="card__profile">
-          <figure class="card__picture">
-            <img src="images/profile-1.jpg"  class="card__img">
-          </figure>
-          
-          <div class="card__info">
-            <h3 class="card__name">Satish Patel</h3>
-            <p class="card__job">Founder & CEO, Huddle</p>
           </div>
-        </div>
-      </article>
 
-      <article class="card__item ">
-        <p class="card__paragraph"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
-          become a well-oiled collaboration machine.</p>
-
-        <div class="card__profile">
-          <figure class="card__picture">
-            <img src="images/profile-2.jpg"  class="card__img">
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" alt="Modern house model" class="w-100">
           </figure>
-          
-          <div class="card__info">
-            <h3 class="card__name">Bruce McKenzie</h3>
-            <p class="card__job">Founder & CEO, Huddle</p>
-          </div>
+
         </div>
-      </article>
+      </section>
 
-      <article class="card__item ">
-        <p class="card__paragraph"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
-          become a well-oiled collaboration machine.</p>
 
-        <div class="card__profile">
-          <figure class="card__picture">
-            <img src="images/profile-3.jpg"  class="card__img">
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner-1.png" alt="House interior">
+
+            <img src="./assets/images/about-banner-2.jpg" alt="House interior" class="abs-img">
           </figure>
-          
-          <div class="card__info">
-            <h3 class="card__name">Iva Boyd</h3>
-            <p class="card__job">Founder & CEO, Huddle</p>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">The Leading Real Estate Rental Marketplace.</h2>
+
+            <p class="about-text">
+              Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
+              combined with
+              specialist services
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Smart Home Design</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Beautiful Scene Around</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="wine-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Exceptional Lifestyle</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Complete 24/7 Security</p>
+              </li>
+
+            </ul>
+
+            <p class="callout">
+              "Enimad minim veniam quis nostrud exercitation
+              llamco laboris. Lorem ipsum dolor sit amet"
+            </p>
+
+            <a href="#service" class="btn">Our Services</a>
+
           </div>
+
         </div>
-      </article>
+      </section>
 
 
-    </section>
 
-    <section class="join">
-      <div class="join__container container">
-        <h3 class="join__title">  Get early access today
-        </h3>
-        <p class="join__paragraph"> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-          questions, our support team would be happy to help you.</p>
 
-        <form class="join__form">
-          <input type="text" placeholder="email@example.com" class="join__input join__input--text">
-          <input type="submit" value="Get Started For Free" class="join__input join__input--submit">
-        </form>
-      </div>
-    </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" id="service">
+        <div class="container">
+
+          <p class="section-subtitle">Our Services</p>
+
+          <h2 class="h2 section-title">Our Main Focus</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-1.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="#">Buy a home</a>
+                </h3>
+
+                <p class="card-text">
+                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
+                  to call home.
+                </p>
+
+                <a href="#" class="card-link">
+                  <span>Find A Home</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-2.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="#">Rent a home</a>
+                </h3>
+
+                <p class="card-text">
+                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
+                  to call home.
+                </p>
+
+                <a href="#" class="card-link">
+                  <span>Find A Home</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="#">Sell a home</a>
+                </h3>
+
+                <p class="card-text">
+                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
+                  to call home.
+                </p>
+
+                <a href="#" class="card-link">
+                  <span>Find A Home</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROPERTY
+      -->
+
+      <section class="property" id="property">
+        <div class="container">
+
+          <p class="section-subtitle">Properties</p>
+
+          <h2 class="h2 section-title">Featured Listings</h2>
+
+          <ul class="property-list has-scrollbar">
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-1.jpg" alt="New Apartment Nice View" class="w-100">
+                  </a>
+
+                  <div class="card-badge green">For Rent</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong>$34,900</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">New Apartment Nice View</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span>Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#">William Seklo</a>
+                      </p>
+
+                      <p class="author-title">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-2.jpg" alt="Modern Apartments" class="w-100">
+                  </a>
+
+                  <div class="card-badge orange">For Sales</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong>$34,900</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Modern Apartments</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span>Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#">William Seklo</a>
+                      </p>
+
+                      <p class="author-title">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-3.jpg" alt="Comfortable Apartment" class="w-100">
+                  </a>
+
+                  <div class="card-badge green">For Rent</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong>$34,900</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Comfortable Apartment</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span>Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#">William Seklo</a>
+                      </p>
+
+                      <p class="author-title">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-4.png" alt="Luxury villa in Rego Park" class="w-100">
+                  </a>
+
+                  <div class="card-badge green">For Rent</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span>4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span>2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong>$34,900</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Luxury villa in Rego Park</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong>3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span>Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span>Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong>3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span>Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#">William Seklo</a>
+                      </p>
+
+                      <p class="author-title">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="features">
+        <div class="container">
+
+          <p class="section-subtitle">Our Aminities</p>
+
+          <h2 class="h2 section-title">Building Aminities</h2>
+
+          <ul class="features-list">
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="car-sport-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Parking Space</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="water-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Swimming Pool</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Private Security</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="fitness-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Medical Center</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="library-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Library Area</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="bed-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">King Size Beds</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Smart Homes</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="football-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Kid’s Playland</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">News & Blogs</p>
+
+          <h2 class="h2 section-title">Leatest News Feeds</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-1.png" alt="The Most Inspiring Interior Design Of 2021" class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <ul class="card-meta-list">
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="person"></ion-icon>
+
+                          <span>by: Admin</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="pricetags"></ion-icon>
+
+                          <span>Interior</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                    <h3 class="h3 blog-title">
+                      <a href="#">The Most Inspiring Interior Design Of 2021</a>
+                    </h3>
+
+                  </div>
+
+                  <div class="blog-content-bottom">
+                    <div class="publish-date">
+                      <ion-icon name="calendar"></ion-icon>
+
+                      <time datetime="2022-27-04">Apr 27, 2022</time>
+                    </div>
+
+                    <a href="#" class="read-more-btn">Read More</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-2.jpg" alt="Recent Commercial Real Estate Transactions" class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <ul class="card-meta-list">
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="person"></ion-icon>
+
+                          <span>by: Admin</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="pricetags"></ion-icon>
+
+                          <span>Estate</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                    <h3 class="h3 blog-title">
+                      <a href="#">Recent Commercial Real Estate Transactions</a>
+                    </h3>
+
+                  </div>
+
+                  <div class="blog-content-bottom">
+                    <div class="publish-date">
+                      <ion-icon name="calendar"></ion-icon>
+
+                      <time datetime="2022-27-04">Apr 27, 2022</time>
+                    </div>
+
+                    <a href="#" class="read-more-btn">Read More</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
+                    class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <ul class="card-meta-list">
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="person"></ion-icon>
+
+                          <span>by: Admin</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="pricetags"></ion-icon>
+
+                          <span>Room</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                    <h3 class="h3 blog-title">
+                      <a href="#">Renovating a Living Room? Experts Share Their Secrets</a>
+                    </h3>
+
+                  </div>
+
+                  <div class="blog-content-bottom">
+                    <div class="publish-date">
+                      <ion-icon name="calendar"></ion-icon>
+
+                      <time datetime="2022-27-04">Apr 27, 2022</time>
+                    </div>
+
+                    <a href="#" class="read-more-btn">Read More</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+
+          <div class="cta-card">
+            <div class="card-content">
+              <h2 class="h2 card-title">Looking for a dream home?</h2>
+
+              <p class="card-text">We can help you realize your dream of a new home</p>
+            </div>
+
+            <button class="btn cta-btn">
+              <span>Explore Properties</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
   </main>
 
-  <footer class="footer ">
-    <section class="footer__container container">
-      <img src="images/logo.svg" class="footer__logo">
 
-      <div class="footer__items">
-        <p class="footer__contact footer__contact--first">
-          <img src="images/icon-location.svg" class="footer__icon">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem aperiam quibusdam, veritatis explicabo similique.
-        </p>
-  
-  
-        <div class="footer__content">
-          
-          <p class="footer__contact footer__contact--second">
-            <img src="images/icon-phone.svg" class="footer__icon">
-            +1-543-123-4567
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.png" alt="Homeverse logo">
+          </a>
+
+          <p class="section-text">
+            Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
           </p>
-  
-          <div class="footer__location">
-            <p class="footer__contact">
-              <img src="images/icon-email.svg" class="footer__icon">
-              example@fylo.com
-            </p>
-          </div>
-  
-        </div>
-  
-        <nav class="footer__nav">
-          <a href="#" class="footer__link">About Us</a>
-          <a href="#" class="footer__link">Jobs</a>
-          <a href="#" class="footer__link">Press</a>
-          <a href="#" class="footer__link">Blog</a>
-        </nav>
-  
-        <nav class="footer__nav">
-          <a href="#" class="footer__link">Contact Us</a>
-          <a href="#" class="footer__link">Terms</a>
-          <a href="#" class="footer__link">Privacy</a>
-        </nav>
-  
-        <div class="footer__social">
-          <a href="#" class="footer__media"><img src="images/fb.svg" class="footer__img"></a>
-          <a href="#" class="footer__media"><img src="images/twitter.svg" class="footer__img"></a>
-          <a href="#" class="footer__media footer__media--last"><img src="images/instagram.svg" class="footer__img"></a>
-        </div>
-      </div>
-      
-    </section>
 
+          <ul class="contact-list">
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Brooklyn, New York, United States</address>
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+0123456789" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>+0123-456789</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:contact@homeverse.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>contact@homeverse.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">All Products</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Locations Map</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">My account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Promotional Offers</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Customer Care</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">My account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
 
   </footer>
 
+
+
+
+
   <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-  
-  
-  
-  
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  
-  
-  
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
 </body>
+
 </html>
