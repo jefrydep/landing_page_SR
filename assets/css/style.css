@@ -35,6 +35,7 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --opal: hsl(180, 20%, 62%);
+  --golden: hsl(51, 100%, 50%);
 
   /**
    * typography
@@ -308,7 +309,7 @@ button, a { transition: var(--transition); }
 .header-top-link:is(:hover, :focus) { color: var(--orange-soda); }
 
 .header-top-link ion-icon {
-  color: var(--orange-soda);
+  color: var(--golden);
   font-size: 15px;
   --ionicon-stroke-width: 60px;
 }
@@ -393,7 +394,7 @@ height: 60px;
   padding-block: 15px;
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
+.navbar-link:is(:hover, :focus) { color: var(--golden); }
 
 .overlay {
   position: fixed;
@@ -606,7 +607,7 @@ height: 60px;
 
 .service-card .card-title { margin-bottom: 15px; }
 
-.service-card .card-title > a:is(:hover, :focus) { color: var(--orange-soda); }
+.service-card .card-title > a:is(:hover, :focus) { color: var(--golden); }
 
 .service-card .card-text {
   color: var(--cadet);
@@ -625,7 +626,7 @@ height: 60px;
   gap: 5px;
 }
 
-.service-card:is(:hover, :focus) .card-link { color: var(--orange-soda); }
+.service-card:is(:hover, :focus) .card-link { color: var(--golden); }
 
 .service-card::after {
   content: "";
@@ -634,7 +635,7 @@ height: 60px;
   left: 0;
   width: 0;
   height: 4px;
-  background: var(--orange-soda);
+  background: var(--golden);
   transition: var(--transition);
 }
 

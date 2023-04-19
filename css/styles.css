@@ -136,9 +136,6 @@ body{
     gap: 5em;
 }
 
-.about *{
-    /* outline: 1px solid #fff; */
-}
 
 .about__img{
     width: 100px;
