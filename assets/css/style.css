@@ -147,7 +147,10 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container { 
+   
+  padding-inline: 15px; 
+}
 
 button, a { transition: var(--transition); }
 
@@ -459,7 +462,10 @@ height: 60px;
   padding-block: var(--section-padding);
 }
 
-.hero-content { margin-bottom: 60px; }
+.hero-content { 
+align-content: center;
+  display: flex;
+  margin-bottom: 60px; }
 
 
 
@@ -616,10 +622,12 @@ height: 60px;
 .service-card .card-title > a:is(:hover, :focus) { color: var(--golden); }
 
 .service-card .card-text {
+
   color: var(--cadet);
   font-size: var(--fs-5);
   line-height: auto;
   margin-bottom: 25px;
+
 }
 
 .service-card .card-link {
@@ -742,7 +750,7 @@ height: 60px;
   color: var(--cadet);
   font-size: var(--fs-5);
   line-height: 1.8;
-  margin-bottom: 25px;
+  margin-bottom: 2px;
 }
 
 .property-card .card-list {
@@ -1073,6 +1081,7 @@ height: 60px;
 .form__title{
   font-size: 2rem;
   margin-bottom: .5em;
+  color:#2f83b4;
 
 }
  .form__container{
@@ -1328,7 +1337,9 @@ background-size: 10px 10px;
    * HERO
    */
 
-  .hero-content { max-width: 400px; }
+  .hero-content { 
+    max-width: 400px; 
+  }
 
 
 
@@ -1446,12 +1457,18 @@ background-size: 10px 10px;
   .hero-content {
     max-width: unset;
     margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .hero .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    height: 400px;
+    background-image: url('../images/SAN\ ROMAN\ 2.png');
+    display: flex;
     align-items: center;
+    
+    background-size: cover
   }
 
 
@@ -1640,6 +1657,9 @@ background-size: 10px 10px;
     padding-left: 30px;
     max-width: 450px;
     margin-bottom: 40px;
+    display: flex;
+    justify-items: center;
+    width: 60px;
   }
 
 
