@@ -243,15 +243,23 @@ button, a { transition: var(--transition); }
 .card-badge.orange { background: var(--yellow-red); }
 
 .has-scrollbar {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  overflow-x: auto;
+   
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+   
+   
+   
+   
+   
+  
+   
   margin-inline: -15px;
   padding-inline: 15px;
-  scroll-padding-left: 15px;
+ 
   padding-bottom: 60px;
-  scroll-snap-type: inline mandatory;
+   
 }
 
 .has-scrollbar > li {
