@@ -392,6 +392,21 @@ height: 60px;
   --ionicon-stroke-width: 45px;
   padding: 5px;
 }
+.mapa{
+  
+ 
+ 
+  display: flex;
+  flex-direction: column;
+}
+.mapa__logo{
+  background-color: green;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .navbar-link {
   color: var(--cadet);
