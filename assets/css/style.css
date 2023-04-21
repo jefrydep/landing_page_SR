@@ -897,6 +897,7 @@ height: 60px;
   align-items: center;
 }
 
+
 .blog-card .read-more-btn {
   color: var(--orange-soda);
   font-size: var(--fs-7);
@@ -904,6 +905,18 @@ height: 60px;
   text-transform: uppercase;
 }
 
+.container_form{
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.maps{
+ width: 400px;
+ height: 600px;
+  background-size: cover;
+  background-image: url('../images/property-1.jpg');
+}
 
 
 
