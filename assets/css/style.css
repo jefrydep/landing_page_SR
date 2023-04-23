@@ -408,11 +408,12 @@ height: 60px;
   flex-direction: column;
 }
 .mapa__logo{
-  background-color: green;
-  height: 300px;
+  background-color:hsl(0, 0%, 100%);
+  height: 0px;
   width: 300px;
   display: flex;
   flex-direction: column;
+  
 }
 
 
@@ -968,7 +969,7 @@ align-content: center;
 }
 
 .cta-card {
-  background:  #fbd97f;
+  background:  #f9ad19;
   padding: 50px 25px;
   box-shadow: var(--shadow-2);
 }
@@ -1003,12 +1004,12 @@ align-content: center;
 }
 
 .cta-btn:is(:hover, :focus) {
-  background: none;
+  background: blue;
   color: var(--white);
   border-color: transparent;
 }
 
-.cta-btn::before { background: var(--black); }
+.cta-btn::before { background: var(--blue); }
 
 
 
@@ -1403,11 +1404,20 @@ background-size: 10px 10px;
    * BLOG
    */
 
-  .blog-card { --fs-7: 0.875rem; }
+  .blog-card {
+     --fs-7: 0.875rem; 
+     
+    }
 
-  .blog-title { font-size: 1.25rem; }
+  .blog-title { 
+    font-size: 1.25rem; 
+    
+  }
 
-  .blog .card-meta-list { gap: 30px; }
+  .blog .card-meta-list { 
+    gap: 30px; 
+  
+  }
 
 
 
@@ -1545,8 +1555,9 @@ background-size: 10px 10px;
    * BLOG
    */
 
-  .blog-title { font-size: 1.375rem; }
-
+  .blog-title { 
+    
+    font-size: 1.375rem; }
 
 
   /**
@@ -1708,6 +1719,7 @@ background-size: 10px 10px;
   .cta-card {
     --fs-2: 2.25rem;
     padding-inline: 60px;
+    
   }
 
 
