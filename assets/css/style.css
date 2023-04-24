@@ -36,7 +36,7 @@
   --black: hsl(0, 0%, 0%);
   --opal: hsl(180, 20%, 62%);
   --golden: hsl(51, 100%, 50%);
-  --blue: hsl(212, 99%, 20%);
+  --blue: hsl(212, 21%, 51%);
   --yellow-red: hsl(40, 90%, 54%);
   --yellow-orange: hsl(44, 49%, 74%);
 
@@ -393,7 +393,7 @@ height: 60px;
   margin-bottom: 25px;
 }
 
-.navbar-top .logo img { width: 200px; }
+.navbar-top .logo img { width: 100px; }
 
 .nav-close-btn ion-icon {
   font-size: 20px;
@@ -418,7 +418,7 @@ height: 60px;
 
 
 .navbar-link {
-  color: var(--cadet);
+  color: white;
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
   text-transform: uppercase;
@@ -881,8 +881,16 @@ align-content: center;
 \*-----------------------------------*/
 
 .blog { padding-block: var(--section-padding); }
+.blog-list{
+    display:flex ;
+    flex-wrap: wrap;
+    
+}
 
-.blog-card { box-shadow: var(--shadow-2); }
+.blog-card { 
+    max-width: 350px;
+    
+    box-shadow: var(--shadow-2); }
 
 .blog-card .card-banner {
   overflow: hidden;
@@ -1436,7 +1444,25 @@ background-size: 10px 10px;
   .footer { margin-bottom: 0; }
 
 }
+.container-prueba{
+    background-color: green;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
+}
+.hijo{
+    width: 300px;
+    background-color: blue;
+    height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 
