@@ -617,6 +617,7 @@ align-content: center;
 .service {
   background: var(--cultured-2);
   padding-block: var(--section-padding);
+  
 }
 
 .service-list {
@@ -630,8 +631,9 @@ align-content: center;
   position: relative;
   background: var(--white);
   text-align: center;
-  padding: 40px 30px;
+  padding: 60px 50px;
   box-shadow: var(--shadow-2);
+  
 }
 
 .service-card .card-icon {
@@ -686,11 +688,14 @@ align-content: center;
   #PROPERTY
 \*-----------------------------------*/
 
-.property { padding-block: var(--section-padding); }
+.property { 
+  padding-block: var(--section-padding);
+  background-color: #E6F0F7;
+}
 
 .property-card {
-  border: 1px solid var(--alice-blue);
-  box-shadow: var(--shadow-2);
+  border: 1px solid var(--blue);
+  box-shadow: var(--blue);
 }
 
 .property-card .card-banner {
@@ -743,7 +748,7 @@ align-content: center;
 
 .banner-actions-btn:first-child { margin-right: auto; }
 
-.banner-actions-btn:is(:hover, :focus) { color: var(--orange-soda); }
+.banner-actions-btn:is(:hover, :focus) { color: var(--yellow-red); }
 
 .property-card .card-content {
   padding: 30px 15px 15px;
@@ -751,7 +756,7 @@ align-content: center;
 }
 
 .card-price {
-  color: var(--orange-soda);
+  color: var(--blue);
   font-family: var(--ff-poppins);
   font-size: var(--fs-5);
   margin-bottom: 5px;
@@ -767,7 +772,7 @@ align-content: center;
   margin-bottom: 15px;
 }
 
-.property-card .card-title > a:is(:hover, :focus) { color: var(--orange-soda); }
+.property-card .card-title > a:is(:hover, :focus) { color: var(--golden); }
 
 .property-card .card-text {
   color: var(--cadet);
@@ -834,7 +839,7 @@ align-content: center;
   margin-bottom: 3px;
 }
 
-.author-name > a:is(:hover, :focus) { color: var(--orange-soda); }
+.author-name > a:is(:hover, :focus) { color: var(--yellow-red); }
 
 .author-title {
   color: var(--cadet);
@@ -1008,7 +1013,7 @@ align-content: center;
   border-color: transparent;
 }
 
-.cta-btn::before { background: var(--black); }
+.cta-btn::before { background: var(--blue); }
 
 
 
@@ -1019,7 +1024,7 @@ align-content: center;
 \*-----------------------------------*/
 
 .footer {
-  background: var(--raisin-black-1);
+  background: var(--blue);
   color: var(--white);
   margin-bottom: 68px;
 }
