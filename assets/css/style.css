@@ -892,6 +892,15 @@ align-content: center;
     
     box-shadow: var(--shadow-2); }
 
+ .tituloo{
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #148b8f;
+  display: flex;
+
+ }
+
 .blog-card .card-banner {
   overflow: hidden;
   aspect-ratio: 2 / 1.5;
