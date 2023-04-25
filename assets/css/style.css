@@ -36,7 +36,7 @@
   --black: hsl(0, 0%, 0%);
   --opal: hsl(180, 20%, 62%);
   --golden: hsl(51, 100%, 50%);
-  --blue: hsl(212, 99%, 20%);
+  --blue: hsl(212, 21%, 51%);
   --yellow-red: hsl(40, 90%, 54%);
   --yellow-orange: hsl(44, 49%, 74%);
 
@@ -393,7 +393,7 @@ height: 60px;
   margin-bottom: 25px;
 }
 
-.navbar-top .logo img { width: 200px; }
+.navbar-top .logo img { width: 100px; }
 
 .nav-close-btn ion-icon {
   font-size: 20px;
@@ -408,16 +408,17 @@ height: 60px;
   flex-direction: column;
 }
 .mapa__logo{
-  background-color: green;
-  height: 300px;
+  background-color:hsl(0, 0%, 100%);
+  height: 0px;
   width: 300px;
   display: flex;
   flex-direction: column;
+  
 }
 
 
 .navbar-link {
-  color: var(--cadet);
+  color: white;
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
   text-transform: uppercase;
@@ -617,7 +618,6 @@ align-content: center;
 .service {
   background: var(--cultured-2);
   padding-block: var(--section-padding);
-  
 }
 
 .service-list {
@@ -631,9 +631,8 @@ align-content: center;
   position: relative;
   background: var(--white);
   text-align: center;
-  padding: 60px 50px;
+  padding: 40px 30px;
   box-shadow: var(--shadow-2);
-  
 }
 
 .service-card .card-icon {
@@ -688,14 +687,11 @@ align-content: center;
   #PROPERTY
 \*-----------------------------------*/
 
-.property { 
-  padding-block: var(--section-padding);
-  background-color: #E6F0F7;
-}
+.property { padding-block: var(--section-padding); }
 
 .property-card {
-  border: 1px solid var(--blue);
-  box-shadow: var(--blue);
+  border: 1px solid var(--alice-blue);
+  box-shadow: var(--shadow-2);
 }
 
 .property-card .card-banner {
@@ -748,7 +744,7 @@ align-content: center;
 
 .banner-actions-btn:first-child { margin-right: auto; }
 
-.banner-actions-btn:is(:hover, :focus) { color: var(--yellow-red); }
+.banner-actions-btn:is(:hover, :focus) { color: var(--orange-soda); }
 
 .property-card .card-content {
   padding: 30px 15px 15px;
@@ -756,7 +752,7 @@ align-content: center;
 }
 
 .card-price {
-  color: var(--blue);
+  color: var(--orange-soda);
   font-family: var(--ff-poppins);
   font-size: var(--fs-5);
   margin-bottom: 5px;
@@ -772,7 +768,7 @@ align-content: center;
   margin-bottom: 15px;
 }
 
-.property-card .card-title > a:is(:hover, :focus) { color: var(--golden); }
+.property-card .card-title > a:is(:hover, :focus) { color: var(--orange-soda); }
 
 .property-card .card-text {
   color: var(--cadet);
@@ -839,7 +835,7 @@ align-content: center;
   margin-bottom: 3px;
 }
 
-.author-name > a:is(:hover, :focus) { color: var(--yellow-red); }
+.author-name > a:is(:hover, :focus) { color: var(--orange-soda); }
 
 .author-title {
   color: var(--cadet);
@@ -885,8 +881,16 @@ align-content: center;
 \*-----------------------------------*/
 
 .blog { padding-block: var(--section-padding); }
+.blog-list{
+    display:flex ;
+    flex-wrap: wrap;
+    
+}
 
-.blog-card { box-shadow: var(--shadow-2); }
+.blog-card { 
+    max-width: 350px;
+    
+    box-shadow: var(--shadow-2); }
 
 .blog-card .card-banner {
   overflow: hidden;
@@ -973,7 +977,7 @@ align-content: center;
 }
 
 .cta-card {
-  background:  #fbd97f;
+  background:  #f9ad19;
   padding: 50px 25px;
   box-shadow: var(--shadow-2);
 }
@@ -1008,7 +1012,7 @@ align-content: center;
 }
 
 .cta-btn:is(:hover, :focus) {
-  background: none;
+  background: blue;
   color: var(--white);
   border-color: transparent;
 }
@@ -1024,7 +1028,7 @@ align-content: center;
 \*-----------------------------------*/
 
 .footer {
-  background: var(--blue);
+  background: var(--raisin-black-1);
   color: var(--white);
   margin-bottom: 68px;
 }
@@ -1408,11 +1412,20 @@ background-size: 10px 10px;
    * BLOG
    */
 
-  .blog-card { --fs-7: 0.875rem; }
+  .blog-card {
+     --fs-7: 0.875rem; 
+     
+    }
 
-  .blog-title { font-size: 1.25rem; }
+  .blog-title { 
+    font-size: 1.25rem; 
+    
+  }
 
-  .blog .card-meta-list { gap: 30px; }
+  .blog .card-meta-list { 
+    gap: 30px; 
+  
+  }
 
 
 
@@ -1431,7 +1444,25 @@ background-size: 10px 10px;
   .footer { margin-bottom: 0; }
 
 }
+.container-prueba{
+    background-color: green;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
+}
+.hijo{
+    width: 300px;
+    background-color: blue;
+    height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 
@@ -1550,8 +1581,9 @@ background-size: 10px 10px;
    * BLOG
    */
 
-  .blog-title { font-size: 1.375rem; }
-
+  .blog-title { 
+    
+    font-size: 1.375rem; }
 
 
   /**
@@ -1713,6 +1745,7 @@ background-size: 10px 10px;
   .cta-card {
     --fs-2: 2.25rem;
     padding-inline: 60px;
+    
   }
 
 
