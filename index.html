@@ -1,893 +1,130 @@
+ {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>San Roman Inmobiliaria</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./SAN ROMAN.ico" type="image/svg+xml">
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>San Roman Inmobiliaria</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./SAN ROMAN.ico" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-
-    <div class="overlay" data-overlay></div>
-
-    <div class="header-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
       <div class="container">
+        <div class="header__nav__movil">
+          <div class="header__nav__movil__logo">
+            <h2>Inmobiliaria San roman </h2> 
 
-        <ul class="header-top-list">
-
-          <li>
-            <a href="mailto:constructoraeinmobiliariasanro@gmail.com" class="header-top-link">
-              <ion-icon name="mail-outline"></ion-icon>
-
-              <span>constructoraeinmobiliariasanro@gmail.com</span>
-            </a>
-          </li>
-
-          <li>
-            <a target="_blank" href="https://goo.gl/maps/NpYfeYRGkr58Kvdo6" class="header-top-link">
-              <ion-icon name="location-outline"></ion-icon>
-
-              <address>Juliaca Jr.Ricardo Palma 302</address>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="wrapper">
-          <ul class="header-top-social-list">
-
-            <li>
-              <a target="_blank" href="https://wa.me/51929623154" class="header-top-social-link">
-                <ion-icon name="logo-whatsapp"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.facebook.com/SanRomanConstructoraInmobiliaria/" class="header-top-social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            
-
-            
-
-           
+          </div>
+          <div class="header__nav__icon">Menu</div>
+        </div>
+        <!-- <nav class="header__nav">
+          <div class="header__nav__logo">JesfryDep@gmail.com</div>
+          <ul class="header__nav__list">
+            <li><a class="header__nav__list__item" href="#">Inicio</a></li>
+            <li><a class="header__nav__list__item" href="#">Servicios</a></li>
+            <li><a class="header__nav__list__item" href="#">Inmuebles</a></li>
+            <li><a class="header__nav__list__item" href="#">Nosotros</a></li>
+            <li><a class="header__nav__list__item" href="#">Conctanos</a></li>
           </ul>
-
-          <button class="header-top-btn">contactar</button>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="header-bottom">
-      <div class="container">
-
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.png" alt="Homeverse logo">
-        </a>
-
-        <nav class="navbar" data-navbar>
-
-          <div class="navbar-top">
-
-            <a href="#" class="logo">
-              <img src="./assets/images/logo.png" alt="Homeverse logo">
-            </a>
-
-            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </div>
-
-          <div class="navbar-bottom">
-            <ul class="navbar-list">
-
-              <li>
-                <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
-              </li>
-
-              <li>
-                <a href="#about" class="navbar-link" data-nav-link>Acerca de</a>
-              </li>
-
-              <li>
-                <a href="#service" class="navbar-link" data-nav-link>Vision y Mision</a>
-              </li>
-
-               
-
-              <li>
-                <a href="#blog" class="navbar-link" data-nav-link>Proyectos</a>
-              </li>
-
-              <li>
-                <a href="#contact" class="navbar-link" data-nav-link>Contactanos</a>
-              </li>
-
-            </ul>
-          </div>
-
-        </nav>
-
-        <div class="header-bottom-actions">
-
-           
-          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
-            <ion-icon name="menu-outline"></ion-icon>
-
-            <span>Menu</span>
-          </button>
-
-        </div>
-
-      </div>
-    </div>
-
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
-        <div class="container">
-
-          <div class="hero-content" >
-            
-            <h2 class="h1">Quienes Somos</h2>
-
-            <p class="hero-text;">2 años de experiencia desarrollando proyectos en los distritos más allegado de Juliaca, 
-              nos permite manejar información que nos posicionan como proyectos de alta revalorización y valor de compra.En estos dos años, 
-              hemos desarrollado un ecosistema de empresas en el grupo que se potencian entre si y ofrecen un valor agregado al inversionista.</p>
-          </div>
-
-            <!-- 
-         
-              <figure class="hero-banner">
-                <img src="./assets/images/SAN ROMAN 2.png" alt="Constructora e Inmobiliaria" class="w-100">
-              </figure>
-            -->
-        </div>
-      </section>
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="about" id="about" style="background-color: whitesmoke;">
-        <div class="container">
-
-          <figure class="about-banner">
-            <img src="./assets/images/SAN ROMAN 1.jpeg" alt="House interior">
-
-            <img class="abs-img">
-          </figure>
-
-          <div class="about-content">
-
-            <h2 class="h2 section-title" >HISTORIA DE SAN ROMAN</h2>
-
-            <p class="about-text" style="text-align: justify; color: black; line-height: 2.15;">
-              Constructora san Román surge en el año 2021 en plena pandemia, una empresa dedicada a aprender de sus clientes.
-              Su experiencia en el mercado de la construcción y la inmobiliaria demuestra que son ellos los que nos enseñan constantemente a optimizar nuestros servicios,
-              y el gran crecimiento que tuvieron en tan solo un año con más de 4 proyectos de lotizaciones y urbanizaciones
-              lograron posicionarse en el mercado con un gran crecimiento en el rubro inmobiliario. Esta es la historia de una empresa impulsada
-              por el espíritu emprendedor de 2 muchachos, que es un ejemplo de crecimiento.
+          <button class="button__inmuebles">Ver Inmuebles</button>
+        </nav> -->
+        <section class="portada">
+          <div class="portada__content">
+            <p>
+              Trabajamos para que alcances el sueño de tener tu PROPIA VIVIENDA
             </p>
-            <p class="callout" style="background-color: #B3CCF7; border-color: #D4AF37;">
-              ""
-            </p>
+          </div>
+          <p>Asesoria consultoria y gestion inmobiliaria</p>
+          <button>Contactanos</button>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="stats">
+        <div class="container__stats">
+        
+          <div class="container__stats__item"><h3>¡Porque elegirnos?</h3></div>
+          <div class="container__stats__item"><h3>3 años de experiencia</h3></div>
+          <div class="container__stats__item"><h3>+ 500 clientes</h3></div>
+          <div class="container__stats__item"><h3>+ 500ventas efectuadas</h3></div>
         </div>
       </section>
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="service" id="service">
+      <section class="servicios">
         <div class="container">
-
-          <h2 class="h2 section-title">Our Vision and Mission</h2>
-
-          <ul class="service-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/vision.png" alt="Service icon" width="200px" height="200px">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <a href="#">Vision</a>
-                </h3>
-
-                <p class="card-text" style="text-align: justify;">
-                  Ser una empresa líder en construcción, consultoría e inmobiliaria, reconocida por su capacidad, 
-                  calidad y cumplimiento con las normas de seguridad; empleando los procedimientos constructivos innovadores 
-                  que van a permitir la construcción de obras más confortables la cual generara un mejor estándar de vida a la población 
-                  que confíen en nuestro equipo y la buena práctica que empleamos.
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/mision.jpeg" alt="Mision icon" width="200px" height="200px">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <a href="#">Mision</a>
-                </h3>
-
-                <p class="card-text" style="text-align: justify;">
-                  Somos una empresa seria con mentalidad de servicio, ofrecemos diversos proyectos inmobiliarios en la zona sur del país, 
-                  estos proyectos están acordes a la necesidad de nuestros clientes ya sean a fines de vivienda o en modalidad de inversión. 
-                  Así mismo volvernos aliados de nuestros clientes brindando un servicio integral basado exclusivamente en su satisfacción; 
-                  también velamos por el bienestar de cada integrante de nuestra empresa.
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/valores.jpeg" alt="Mision icon" width="170px" height="150px">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <a>Valores</a>
-                </h3>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Integridad</p>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Igualdad</p>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Tolerancia</p>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Empatía</p>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Equidad</p>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Solidaridad</p>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Honestidad</p>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Confianza</p>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Responsabilidad</p>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Lealtad</p>
-                  <p class="card-text" style="text-align:justify; line-height: 0.1;">✓ Gratitud</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- 
-        - #PROPERTY
-      -->
-
-
-
-
-
-
-      <!-- 
-        - #FEATURES
-      -->
-
-      
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="blog" id="blog">
-        <div class="container">
- 
-          <h2 class="h2 section-title">Proyectos Nuevos lotes</h2>
-
-          <ul class="blog-list has-scrollbar">
-
-            <li>
-              <div class="blog-card">
-                <div>Proyecto Merida</div>
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-1.png" alt="The Most Inspiring Interior Design Of 2021" class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>Urbanizacion Merida</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>10,000</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">
-                        ✔Trámite en registros públicos
-
-                        ✔Vías aperturadas 
-
-                        ✔Áreas Verdes
-                       </a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">
-                        Salida Puno
-                      </time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Disponible</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-                <div>Proyecto Merida</div>
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-2.jpg" alt="Recent Commercial Real Estate Transactions" class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>Residencial Quiñones</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>6,000</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">
-                        ✔Pórtico de Ingreso
-                        ✔Amplias Áreas Verdes
-                        ✔Cancha de Grass Deportiva
-                        ✔Vías Afirmadas 
-                        ✔Proyección de Habilitación Urbana
-                       </a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Salida Puno</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Disponible</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-                <div>Proyecto Merida</div>
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
-                    class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>Urb. Nueva Estrella</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>4,500</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">
-                        ✔Áreas verdes y parques
-                        ✔Área educativa
-                        ✔Vías aperturadas
-                        ✔Mega mercado 
-                        ✔Registros públicos 
-                        ✔Cerro con temática de santuario
-                        ✔Transporte Permanente
-                       </a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Salida Cusco</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Disponible</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-            <li>
-              <div class="blog-card">
-                <div>Proyecto Merida</div>
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
-                    class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>Urb. Nueva Estrella</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>4,500</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">
-                        ✔Áreas verdes y parques
-                        ✔Área educativa
-                        ✔Vías aperturadas
-                        ✔Mega mercado 
-                        ✔Registros públicos 
-                        ✔Cerro con temática de santuario
-                        ✔Transporte Permanente
-                       </a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Salida Cusco</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Disponible</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-            <li>
-              <div class="blog-card">
-                <div>Proyecto Merida</div>
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
-                    class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>Urb. Nueva Estrella</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>4,500</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">
-                        ✔Áreas verdes y parques
-                        ✔Área educativa
-                        ✔Vías aperturadas
-                        ✔Mega mercado 
-                        ✔Registros públicos 
-                        ✔Cerro con temática de santuario
-                        ✔Transporte Permanente
-                       </a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Salida Cusco</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Disponible</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-            <li>
-              <div class="blog-card">
-                <div>Proyecto Merida</div>
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
-                    class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>Urb. Nueva Estrella</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>4,500</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">
-                        ✔Áreas verdes y parques
-                        ✔Área educativa
-                        ✔Vías aperturadas
-                        ✔Mega mercado 
-                        ✔Registros públicos 
-                        ✔Cerro con temática de santuario
-                        ✔Transporte Permanente
-                       </a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Salida Cusco</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Disponible</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-            
-            
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="cta">
-        <div class="container">
-
-          <div class="cta-card">
-            <div class="card-content">
-              <h2 class="h2 card-title">¿Buscas una casa de ensueño?</h2>
-
-              <p class="card-text">te ayudamos a comprar o construir tu casa</p>
+          <div class="servicios__title">Servicios</div>
+          <div class="servicios__container">
+            <div class="servicios__container__item">lote1</div>
+            <div class="servicios__container__item">lote2</div>
+            <div class="servicios__container__item">lote3</div>
+            <div class="servicios__container__item">lote4</div>
+            <div class="servicios__container__item">lote5</div>
+            <div class="servicios__container__item">lote6</div>
+            <div class="servicios__container__item__contact">
+              <h2> Contactanos</h2>
+              <button>Click para contacatarnos</button>
             </div>
-
-            <button class="btn cta-btn">
-              <a target="_blank" href="https://wa.me/51929623154"> <img src="assets/images/whatsapp-fill.svg" style="width: 50px;" height="50px" target > </a>
-
-              
-            </button>
           </div>
-
         </div>
       </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #Footer
-  -->
-  <footer class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-
-        <div class="mapa">
-
-          <div class="footer-brand">
-   
-  
-            <p class="section-text">
-              Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
-            </p>
-  
-            <ul class="contact-list">
-  
-              <li>
-                <a href="#" class="contact-link">
-                  <ion-icon name="location-outline"></ion-icon>
-  
-                  <address>Brooklyn, New York, United States</address>
-                </a>
-              </li>
-  
-              <li>
-                <a href="tel:+0123456789" class="contact-link">
-                  <ion-icon name="call-outline"></ion-icon>
-  
-                  <span>+0123-456789</span>
-                </a>
-              </li>
-  
-              <li>
-                <a href="mailto:contact@homeverse.com" class="contact-link">
-                  <ion-icon name="mail-outline"></ion-icon>
-  
-                  <span>contact@homeverse.com</span>
-                </a>
-              </li>
-  
-            </ul>
-  
-            <ul class="social-list">
-  
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-  
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-  
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-  
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-youtube"></ion-icon>
-                </a>
-              </li>
-  
-            </ul>
-  
+    </main>
+    <footer>
+       <div class="container__footer">
+        <section class="description__footer">
+          <h2>Inmobiliarias del Peru</h2>
+          <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis culpa eius dolores animi pariatur saepe. Porro omnis excepturi inventore at voluptatibus animi, quasi error a quis, dignissimos debitis quo.
+            Recusandae  ore blanditiis odit quaerat ratione! Excepturi quia ducimus eligendi ipsum commodi non at corrupti est distinctio.
+              provident  atibus optio ipsum esse voluptatum dol odio repellat.</p>
           </div>
-          <div class="mapa__logo">
-           hola
+        </section>
+        <section class="container__links__footer">
+          <ul>
+            <h2>links recomendados</h2>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+          </ul>
+          <ul>
+            <h2>links recomendados</h2>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+          </ul>
+          <ul>
+            <h2>links recomendados</h2>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+            <li>catalogo de inmbueble</li>
+          </ul>
+
+        </section>
+        <section class="container__information__footer">
+          <h2>Necesitas mas informacion?</h2>
+       <h2>correo electronio</h2>
+       <h3>jefrydep@gamil.com</h3>
+
+        </section>
+        <section class="container__footer__botton">
+          <h2>INgeniera de sotware develops in the world</h2>
+          <div>
+            <div>
+              icon facebook
+            </div>
+            <div>
+              icon facebook
+            </div>
+            <div>
+              icon facebook
+            </div>
+            <div>
+              icon facebook
+            </div>
           </div>
-        </div>
 
-         
-        <div>
-          <form class="form">
-            <h2 class="form__title">formulario para contactarnos</h2>
-            <div class="form__container">
-              
-              <div class="form__group">
-                <input type="text" id="Nombre" class="form__input" placeholder="">
-                  <label for="Nombre" class="form__label">Nombre</label>
-                  <span class="form__line"></span>
-      
-                </div>
-                <div class="form__group">
-                  <input type="text" id="Nombre" class="form__input" placeholder="">
-                  <label for="Telefono" class="form__label">Telefono</label>
-                  <span class="form__line"></span>
-                  
-                </div>
-                <div class="form__group">
-                  <input type="text" id="Nombre" class="form__input" placeholder="">
-                  <label for="Correo" class="form__label">Correo</label>
-                  <span class="form__line"></span>
-                  
-                </div>
-                <input type="submit" class="form__submit" value="Enviar">
-                
-              </div>
-              
-            </form>
-        </div>
+        </section>
 
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-
-        <p class="copyright">
-          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
-        </p>
-
-      </div>
-    </div>
-
-  </footer>
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+       </div>
+    </footer>
+  </body>
 </html>
