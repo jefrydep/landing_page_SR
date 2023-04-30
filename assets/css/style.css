@@ -103,7 +103,8 @@ margin-top: 2rem;
 margin-left: 1rem;
 margin-right: 1rem;
 /* height: 10rem; */
-color: #fbd97f;
+color: #f9ad19;
+/* color: #fbd97f; */
 padding: 1.3rem 1.3rem;
 background-color: transparent;
 text-align: center;
@@ -123,10 +124,10 @@ text-align: center;
  
 }
 .portada >button{
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-radius: 15px;
   border-style: none;
   background-color: #f9ad19;
