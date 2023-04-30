@@ -14,13 +14,6 @@ body {
   /* background: var(--white); */
   overflow-x: hidden;
 }
-.header__nav__movil{
-  display: flex;
-  background-color: rgb(49, 126, 199);
-  padding: 20px 10px 20px 10px;
-  justify-content: space-evenly;
-
-}
 .header{
 
   background-color: green;
@@ -31,6 +24,22 @@ body {
   /* display: flex; */
 
   
+}
+.header__nav__movil{
+  display: flex;
+  background-color:  white;
+  padding: 20px 10px 20px 10px;
+  justify-content: space-evenly;
+
+}
+.header__nav__movil__logo{
+  color: #013064;
+  /* font-size: 1rem; */
+  text-align: center;
+}
+.header__company{
+  color: #f9ad19;
+  font-weight: 700;
 }
 .header__nav{
   margin-top: 100px;
@@ -83,25 +92,46 @@ li{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 1rem;
 }
 .portada__content{
 
 /* width: 6rem; */
 border-top-right-radius: 1.5rem;
 border-bottom-left-radius: 1.8rem;
-margin-top: 3rem;
-margin-left: 3rem;
-margin-right: 3rem;
+margin-top: 2rem;
+margin-left: 1rem;
+margin-right: 1rem;
 /* height: 10rem; */
-color: orange;
-padding: 1.5rem 1.5rem;
-background-color: white;
+color: #fbd97f;
+padding: 1.3rem 1.3rem;
+background-color: transparent;
+text-align: center;
 
 }
 .portada__content>p{
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.portada__slogan{
+  color: #ffffff;
   font-weight: 700;
-  font-size: 2rem;
+  margin-left: 1rem;
+margin-right: 1rem;
+font-size: 1.3rem;
+text-align: center;
+ 
+}
+.portada >button{
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 15px;
+  border-style: none;
+  background-color: #f9ad19;
+  color: #ffffff;
+  
 }
 .stats{
   background-color: #303030;
@@ -111,8 +141,8 @@ background-color: white;
   display: flex;
   height: 40vh;
   flex-direction: column;
-  
  align-content: center;
+ text-align: center;
 }
  
 .container__stats__item{
@@ -127,7 +157,7 @@ background-color: white;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: white;
   
 }
