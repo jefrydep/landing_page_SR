@@ -12,6 +12,7 @@ html {
 }
 body {
   /* background: var(--white); */
+  /* padding-top: 40px; */
   overflow-x: hidden;
 }
 .header{
@@ -20,7 +21,7 @@ body {
   background-image: url('../images/hacker.jpg');
   background-size: cover;
   background-attachment: fixed;
-  height: 55vh;
+  height: 60vh;
   /* display: flex; */
 
   
@@ -364,15 +365,15 @@ padding-bottom: 1rem;
     /* flex-direction: row; */
     /* height: 100px; */
     height: max-content;
-    
     position: relative;
+    /* position: sticky; */
     /* justify-content: center; */
     /* margin: 0 auto; */
     background-color: transparent;
     /* position: sticky; */
     /* width: 100%; */
     /* width: auto; */
-    top: 20px;
+    top: 50px;
     /* width: max-content; */
     left: 0px;
     right: 0px;
@@ -393,6 +394,8 @@ padding-bottom: 1rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   margin-bottom: 3rem;
+  /* position: sticky; */
+  /* top: 0px; */
   /* min-width: min-content; */
   }
   .header__nav__list{
