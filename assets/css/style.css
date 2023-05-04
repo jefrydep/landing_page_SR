@@ -421,7 +421,6 @@ flex-direction: row;
   margin-bottom: 20px;
   border-radius: 3px;
   outline: 0px;
-  flex-wrap: 10px;
 }
 .container-form form textarea{
   max-width: 530px;
