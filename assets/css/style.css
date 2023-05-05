@@ -44,12 +44,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
   height: 55vh;
-  /* display: flex; */
+  display: flex;
 
   
 }
 .back__nav{
-  background-color: #013064;
+  background-color: transparent;
   opacity: 0.7;
   width: 100%;
   height: 100vh;
@@ -80,7 +80,7 @@ body {
 } */
 
 .header__company{
-  color: #f9ad19;
+  color: #013064;
   font-weight: 700;
 }
 .header__nav{
@@ -91,7 +91,7 @@ body {
   /* left: 80px; */
   right: -300px;
   height: 100vh;
-  background-color:white;
+  background-color:#013064;
   transition: all 500ms;
   /* margin-top: 35px; */
   /* display: none; */
@@ -143,13 +143,34 @@ body {
   align-items: center;
   font-weight: bold;
   /* background-color: red; */
-  color: #f9ad19;
+  color: #ece5d7;
   font-size: 25px;
 }
 
+
 /*ICONOS*/
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+.header-top {
+  background: var(--blue);
+  padding-block: 15px;
+}
+
+.header-top .container,
+.header-top-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-top .container { gap: 8px 20px; }
+
 .header-top-list { gap: 15px; }
-  
+
 .header-top-link {
   color: var(--white);
   font-size: var(--fs-6);
@@ -182,7 +203,133 @@ body {
   color: var(--white);
   font-size: 15px;
 }
------
+
+.header-top-btn {
+  background: var(--yellow-red);
+  color: var(--white);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  padding: 4px 15px;
+}
+
+.header-top-btn:is(:hover, :focus) { --yellow-red: hsl(44, 49%, 74% ); }
+
+.header-bottom {
+  background: var(--prussian-blue);
+  padding-block: 25px;
+}
+
+.header-bottom .logo img { margin-inline: auto;
+height: 60px;
+}
+
+.navbar {
+  background: var(--blue);
+  position: fixed;
+  top: 0;
+  left: -310px;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 3px 10px hsla(0, 0%, 0%, 0.3);
+  z-index: 5;
+  padding: 60px 20px;
+  visibility: hidden;
+  transition: 0.15s ease-in;
+}
+
+.navbar.active {
+  visibility: visible;
+  transform: translateX(310px);
+  transition: 0.25s ease-out;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--cultured-1);
+  margin-bottom: 25px;
+}
+
+.navbar-top .logo img { width: 100px; }
+
+.nav-close-btn ion-icon {
+  font-size: 20px;
+  --ionicon-stroke-width: 45px;
+  padding: 5px;
+}
+.mapa{
+  display: flex;
+  flex-direction: column;
+}
+.mapa__logo{
+  background-color:hsl(0, 0%, 100%);
+  height: 0px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.navbar-link {
+  color: white;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  padding-block: 15px;
+}
+
+.navbar-link:is(:hover, :focus) { color: var(--golden); }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: hsla(0, 0%, 0%, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+  z-index: 4;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.header-bottom-actions {
+  background: var(--blue);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 15px 10px;
+  box-shadow: -2px 0 30px hsla(237, 71%, 52%, 0.2);
+  z-index: 3;
+}
+
+.header-bottom-actions-btn ion-icon {
+  color: hsl(51, 91%, 68%);
+  font-size: 20px;
+  margin-inline: auto;
+  margin-bottom: 5px;
+  --ionicon-stroke-width: 40px;
+  transition: var(--transition);
+}
+
+.header-bottom-actions-btn:is(:hover, :focus) ion-icon { color: var(--golden); }
+
+.header-bottom-actions-btn span {
+  color: var(--cadet);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
+______________________
 
 .header__nav__list{
   display: flex;
@@ -191,18 +338,20 @@ body {
 }
 
 .header__nav__list__item{
-  margin-right: 20px;
-  color:#f9ad19;
+  margin-right: 50px;
+  color:rgb(255, 217, 0);
   list-style-type: none;
   outline: none;
   text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 
 }
 li{
   list-style: none;
 }
 .button__inmuebles{
-  background-color: orange;
+  background-color: rgb(255, 217, 0);
   border: none;
   border-radius: 20px;
   padding: 10px;
@@ -233,11 +382,11 @@ background-color: transparent;
 text-align: center;
 font-weight: 500;
   font-size: 1.5rem;
-  color: #013064;
+  color: #daaf23;
 }
 
 .portada__slogan{
-  color: #013064;
+  color: #daaf23;
   font-weight: 700;
   margin-left: 1rem;
 margin-right: 1rem;
@@ -310,6 +459,7 @@ text-align: center;
   margin-left: 1.1rem;
   margin-right: 1.1rem;
 }
+
 .servicios__container__item__contact{
   /* background-color:blueviolet; */
   height: 8rem;
