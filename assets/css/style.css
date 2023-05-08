@@ -278,6 +278,28 @@ text-align: center;
   background-color: #f9ad19;
   border-style: none;
 }
+.whatsap__icon {
+  position: fixed;
+  bottom: 30px;
+  left: 5px;
+  width: 3rem;
+  height: 3rem;
+  color: #ffffff;
+  background-color: rgb(67, 207, 32);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+   
+  align-items: center;
+}
+.whatsap__icon >i{
+  /* background-color: red; */
+  /* width: 30px; */
+  /* height: 30px; */
+  font-size: 2rem;
+}
+
+
 footer{
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(1,48,100,1) 29%, rgba(64,58,50,1) 100%);
 }
