@@ -1,51 +1,36 @@
-'use strict';
+ document.getElementById("nav__icon").addEventListener("click",showMenu);
+ document.getElementById("back__nav").addEventListener("click",closeMenu);
+ nav = document.getElementById("header__nav")
+ backgroundMenu = document.getElementById("back__nav");
+function showMenu(){
+nav.style.right= "0px"
+backgroundMenu.style.display = "block"
 
-/**
- * element toggle function
- */
 
-const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
+}
+function closeMenu(){
+  nav.style.right= "-300px";
+  backgroundMenu.style.display= "none";
 
-
-
-/**
- * navbar toggle
- */
-
-const navbar = document.querySelector("[data-navbar]");
-const overlay = document.querySelector("[data-overlay]");
-const navCloseBtn = document.querySelector("[data-nav-close-btn]");
-const navOpenBtn = document.querySelector("[data-nav-open-btn]");
-const navbarLinks = document.querySelectorAll("[data-nav-link]");
-
-const navElemArr = [overlay, navCloseBtn, navOpenBtn];
-
-/**
- * close navbar when click on any navbar link
- */
-
-for (let i = 0; i < navbarLinks.length; i++) { navElemArr.push(navbarLinks[i]); }
-
-/**
- * addd event on all elements for toggling navbar
- */
-
-for (let i = 0; i < navElemArr.length; i++) {
-  navElemArr[i].addEventListener("click", function () {
-    elemToggleFunc(navbar);
-    elemToggleFunc(overlay);
-  });
 }
 
 
+  //  // Obtenemos todas las secciones y las ocultamos por defecto, excepto la de inicio.
+  //  var secciones = document.getElementsByTagName("section");
+  //  for (var i = 1; i < secciones.length; i++) {
+  //    secciones[i].style.display = "none";
+  //  }
 
-/**
- * header active state
- */
-
-const header = document.querySelector("[data-header]");
-
-window.addEventListener("scroll", function () {
-  window.scrollY >= 400 ? header.classList.add("active")
-    : header.classList.remove("active");
-}); 
+  //  // Escuchamos el evento de clic en cada enlace de navegación.
+  //  var enlaces = document.getElementsByTagName("a");
+  //  for (var i = 0; i < enlaces.length; i++) {
+  //    enlaces[i].addEventListener("click", function(evento) {
+  //      evento.preventDefault(); // Evita que se recargue la página al hacer clic en un enlace.
+  //      var objetivo = this.getAttribute("href"); // Obtenemos el valor del atributo href del enlace.
+  //      var seccionObjetivo = document.querySelector(objetivo); // Buscamos la sección correspondiente.
+  //      for (var j = 0; j < secciones.length; j++) {
+  //        secciones[j].style.display = "none"; // Ocultamos todas las secciones.
+  //      }
+  //      seccionObjetivo.style.display = "block"; // Mostramos la sección correspondiente.
+  //    });
+  //  }
